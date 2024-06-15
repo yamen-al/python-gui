@@ -1,0 +1,4 @@
+__pycache__/  echo *.pyc  echo .venv/  echo build/ 
+*.pyc 
+.venv/ 
+build/ 
