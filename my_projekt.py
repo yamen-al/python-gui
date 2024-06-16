@@ -3,10 +3,44 @@ my_projekt.py
 
 Dieses Modul stellt eine GUI-Anwendung zur Echtzeit-Visualisierung und Speicherung von seriellen Daten bereit.
 
-Klassen:
-    SerielleApp: Haupt-GUI-Klasse zur Verwaltung der seriellen Kommunikation.
-    MockSerial: Klasse zur Simulation einer seriellen Schnittstelle für Testzwecke.
-    SerielleKom: Klasse zur Verwaltung der seriellen Kommunikation.
+Klassen
+1. SerielleApp
+Die Klasse SerielleApp bildet das Herzstück der GUI-Anwendung und ist verantwortlich für die Verwaltung der Benutzeroberfläche sowie der Interaktionen mit der seriellen Schnittstelle.
+
+Beschreibung:
+
+Diese Klasse erstellt das Hauptfenster der Anwendung, in dem verschiedene GUI-Komponenten wie Eingabefelder, Buttons und ein Diagramm zur Anzeige der empfangenen Daten angezeigt werden.
+Sie bietet Methoden zum Starten und Stoppen der Datenaufnahme, zum Aktualisieren der COM-Ports und zum Speichern der aufgenommenen Daten.
+
+
+
+2. MockSerial
+Die Klasse MockSerial bietet eine Simulation einer seriellen Schnittstelle. Diese ist besonders nützlich für Testzwecke, wenn keine echte serielle Verbindung verfügbar ist.
+
+Beschreibung:
+
+MockSerial ermöglicht die Nachbildung einer seriellen Schnittstelle, indem sie zufällig generierte Daten sendet, die typischerweise von echten seriellen Geräten stammen könnten.
+Dies ist hilfreich für die Entwicklung und das Testen der GUI-Anwendung ohne eine physische serielle Verbindung.
+
+
+
+
+
+3. SerielleKom
+Die Klasse SerielleKom verwaltet die Kommunikation über eine serielle Schnittstelle. Sie bietet Funktionen zum Verbinden, Trennen, Lesen und Schreiben von Daten über die serielle Schnittstelle.
+
+Beschreibung:
+
+Diese Klasse stellt eine Abstraktion für die serielle Kommunikation bereit, die sowohl echte als auch simulierte (Mock) serielle Verbindungen unterstützt.
+Sie kapselt die Details der serielle Kommunikation und stellt eine einfache Schnittstelle zur Verfügung.
+
+
+
+
+
+
+
+
 
 Hauptprogramm:
     Startet die GUI-Anwendung und eine Testinstanz der seriellen Kommunikation.

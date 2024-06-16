@@ -1,7 +1,7 @@
 my_projekt
 ==========
 
-eeDieses Modul stellt eine GUI-Anwendung zur Echtzeit-Visualisierung und Speicherung von seriellen Daten bereit.
+
 
 .. automodule:: my_projekt
     :members:
