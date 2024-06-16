@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="de" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>my_projekt &#8212; Python GUI Project 1.0 Dokumentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=8fdbe8ab"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=70a09b52"></script>
+    <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
+    <link rel="search" title="Suche" href="search.html" />
+    <link rel="prev" title="Welcome to Python GUI Project’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-my_projekt">
+<span id="my-projekt"></span><h1>my_projekt<a class="headerlink" href="#module-my_projekt" title="Link to this heading">¶</a></h1>
+<p>my_projekt.py</p>
+<p>Dieses Modul stellt eine GUI-Anwendung zur Echtzeit-Visualisierung und Speicherung von seriellen Daten bereit.</p>
+<dl class="simple">
+<dt>Klassen:</dt><dd><p>SerielleApp: Haupt-GUI-Klasse zur Verwaltung der seriellen Kommunikation.
+MockSerial: Klasse zur Simulation einer seriellen Schnittstelle für Testzwecke.
+SerielleKom: Klasse zur Verwaltung der seriellen Kommunikation.</p>
+</dd>
+<dt>Hauptprogramm:</dt><dd><p>Startet die GUI-Anwendung und eine Testinstanz der seriellen Kommunikation.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="my_projekt.MockSerial">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_projekt.</span></span><span class="sig-name descname"><span class="pre">MockSerial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#MockSerial"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.MockSerial" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Eine simulierte serielle Schnittstelle zum Testen.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.MockSerial.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#MockSerial.close"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.MockSerial.close" title="Link to this definition">¶</a></dt>
+<dd><p>Schließt den Mock-Port.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.MockSerial.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#MockSerial.open"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.MockSerial.open" title="Link to this definition">¶</a></dt>
+<dd><p>Öffnet den Mock-Port.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.MockSerial.readline">
+<span class="sig-name descname"><span class="pre">readline</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#MockSerial.readline"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.MockSerial.readline" title="Link to this definition">¶</a></dt>
+<dd><p>Liest eine Zeile aus dem Buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Die gelesene Zeile.</p>
+</dd>
+<dt class="field-even">Rückgabetyp<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.MockSerial.start_generating_data">
+<span class="sig-name descname"><span class="pre">start_generating_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#MockSerial.start_generating_data"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.MockSerial.start_generating_data" title="Link to this definition">¶</a></dt>
+<dd><p>Startet die kontinuierliche Generierung von Sinuswellen-Daten.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.MockSerial.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#MockSerial.write"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.MockSerial.write" title="Link to this definition">¶</a></dt>
+<dd><p>Schreibt Daten in den Buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>str</em>) – Die zu schreibenden Daten.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_projekt.</span></span><span class="sig-name descname"><span class="pre">SerielleApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">master</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Diese Klasse stellt die Haupt-GUI-Anwendung für die serielle Kommunikation dar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>master</strong> (<em>tk.Tk</em>) – Das Hauptfenster der Tkinter-Anwendung.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp.aktualisiere_diagramm">
+<span class="sig-name descname"><span class="pre">aktualisiere_diagramm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp.aktualisiere_diagramm"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp.aktualisiere_diagramm" title="Link to this definition">¶</a></dt>
+<dd><p>Aktualisiert das Diagramm mit neuen Daten, solange die Aufnahme läuft.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp.aktualisiere_ports">
+<span class="sig-name descname"><span class="pre">aktualisiere_ports</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp.aktualisiere_ports"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp.aktualisiere_ports" title="Link to this definition">¶</a></dt>
+<dd><p>Aktualisiert die Liste der verfügbaren COM-Ports.
+Hier wird dies nur simuliert.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp.speichern">
+<span class="sig-name descname"><span class="pre">speichern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp.speichern"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp.speichern" title="Link to this definition">¶</a></dt>
+<dd><p>Speichert die Daten in einer CSV-Datei.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp.start"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp.start" title="Link to this definition">¶</a></dt>
+<dd><p>Startet die Datenaufnahme.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp.stop"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp.stop" title="Link to this definition">¶</a></dt>
+<dd><p>Stoppt die Datenaufnahme.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleApp.verbinden">
+<span class="sig-name descname"><span class="pre">verbinden</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleApp.verbinden"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleApp.verbinden" title="Link to this definition">¶</a></dt>
+<dd><p>Verbindet sich mit dem ausgewählten seriellen Port.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="my_projekt.SerielleKom">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">my_projekt.</span></span><span class="sig-name descname"><span class="pre">SerielleKom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'COM1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baudrate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_mock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleKom"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleKom" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Eine Klasse zur Verwaltung der seriellen Kommunikation.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleKom.lese_daten">
+<span class="sig-name descname"><span class="pre">lese_daten</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleKom.lese_daten"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleKom.lese_daten" title="Link to this definition">¶</a></dt>
+<dd><p>Liest Daten von MockSerial und dekodiert sie.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Die gelesenen Daten als Array.</p>
+</dd>
+<dt class="field-even">Rückgabetyp<span class="colon">:</span></dt>
+<dd class="field-even"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleKom.schreibe_daten">
+<span class="sig-name descname"><span class="pre">schreibe_daten</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">daten</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleKom.schreibe_daten"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleKom.schreibe_daten" title="Link to this definition">¶</a></dt>
+<dd><p>Schreibt Daten zum seriellen Port.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>daten</strong> (<em>str</em>) – Die zu schreibenden Daten.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleKom.trennen">
+<span class="sig-name descname"><span class="pre">trennen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleKom.trennen"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleKom.trennen" title="Link to this definition">¶</a></dt>
+<dd><p>Trennt die serielle Verbindung.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True, wenn die Verbindung erfolgreich getrennt wurde, sonst False.</p>
+</dd>
+<dt class="field-even">Rückgabetyp<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="my_projekt.SerielleKom.verbinden">
+<span class="sig-name descname"><span class="pre">verbinden</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/my_projekt.html#SerielleKom.verbinden"><span class="viewcode-link"><span class="pre">[Quellcode]</span></span></a><a class="headerlink" href="#my_projekt.SerielleKom.verbinden" title="Link to this definition">¶</a></dt>
+<dd><p>Verbindet mit dem angegebenen seriellen Port oder mit dem MockSerial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True, wenn die Verbindung erfolgreich war, sonst False.</p>
+</dd>
+<dt class="field-even">Rückgabetyp<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Python GUI Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Inhalte</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">my_projekt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#my_projekt.MockSerial"><code class="docutils literal notranslate"><span class="pre">MockSerial</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#my_projekt.SerielleApp"><code class="docutils literal notranslate"><span class="pre">SerielleApp</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#my_projekt.SerielleKom"><code class="docutils literal notranslate"><span class="pre">SerielleKom</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="vorheriges Kapitel">Welcome to Python GUI Project’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Schnellsuche</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Los" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Zerak.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/my_projekt.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
