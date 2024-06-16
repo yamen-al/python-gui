@@ -36,11 +36,23 @@
 <span id="my-projekt"></span><h1>my_projekt<a class="headerlink" href="#module-my_projekt" title="Link to this heading">¶</a></h1>
 <p>my_projekt.py</p>
 <p>Dieses Modul stellt eine GUI-Anwendung zur Echtzeit-Visualisierung und Speicherung von seriellen Daten bereit.</p>
+<p>Klassen
+1. SerielleApp
+Die Klasse SerielleApp bildet das Herzstück der GUI-Anwendung und ist verantwortlich für die Verwaltung der Benutzeroberfläche sowie der Interaktionen mit der seriellen Schnittstelle.</p>
+<p>Beschreibung:</p>
+<p>Diese Klasse erstellt das Hauptfenster der Anwendung, in dem verschiedene GUI-Komponenten wie Eingabefelder, Buttons und ein Diagramm zur Anzeige der empfangenen Daten angezeigt werden.
+Sie bietet Methoden zum Starten und Stoppen der Datenaufnahme, zum Aktualisieren der COM-Ports und zum Speichern der aufgenommenen Daten.</p>
+<p>2. MockSerial
+Die Klasse MockSerial bietet eine Simulation einer seriellen Schnittstelle. Diese ist besonders nützlich für Testzwecke, wenn keine echte serielle Verbindung verfügbar ist.</p>
+<p>Beschreibung:</p>
+<p>MockSerial ermöglicht die Nachbildung einer seriellen Schnittstelle, indem sie zufällig generierte Daten sendet, die typischerweise von echten seriellen Geräten stammen könnten.
+Dies ist hilfreich für die Entwicklung und das Testen der GUI-Anwendung ohne eine physische serielle Verbindung.</p>
+<p>3. SerielleKom
+Die Klasse SerielleKom verwaltet die Kommunikation über eine serielle Schnittstelle. Sie bietet Funktionen zum Verbinden, Trennen, Lesen und Schreiben von Daten über die serielle Schnittstelle.</p>
+<p>Beschreibung:</p>
+<p>Diese Klasse stellt eine Abstraktion für die serielle Kommunikation bereit, die sowohl echte als auch simulierte (Mock) serielle Verbindungen unterstützt.
+Sie kapselt die Details der serielle Kommunikation und stellt eine einfache Schnittstelle zur Verfügung.</p>
 <dl class="simple">
-<dt>Klassen:</dt><dd><p>SerielleApp: Haupt-GUI-Klasse zur Verwaltung der seriellen Kommunikation.
-MockSerial: Klasse zur Simulation einer seriellen Schnittstelle für Testzwecke.
-SerielleKom: Klasse zur Verwaltung der seriellen Kommunikation.</p>
-</dd>
 <dt>Hauptprogramm:</dt><dd><p>Startet die GUI-Anwendung und eine Testinstanz der seriellen Kommunikation.</p>
 </dd>
 </dl>
@@ -203,6 +215,21 @@ Hier wird dies nur simuliert.</p>
 
 </dd></dl>
 
+<section id="klassen">
+<h2>Klassen<a class="headerlink" href="#klassen" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>SerielleApp</dt><dd><p>Diese Klasse stellt die Haupt-GUI-Anwendung für die serielle Kommunikation dar.</p>
+</dd>
+<dt>MockSerial</dt><dd><p>Eine simulierte serielle Schnittstelle zum Testen.</p>
+</dd>
+<dt>SerielleKom</dt><dd><p>Eine Klasse zur Verwaltung der seriellen Kommunikation.</p>
+</dd>
+</dl>
+</section>
+<section id="hauptprogramm">
+<h2>Hauptprogramm<a class="headerlink" href="#hauptprogramm" title="Link to this heading">¶</a></h2>
+<p>Startet die GUI-Anwendung und eine Testinstanz der seriellen Kommunikation.</p>
+</section>
 </section>
 
 
@@ -228,6 +255,8 @@ Hier wird dies nur simuliert.</p>
 <li class="toctree-l2"><a class="reference internal" href="#my_projekt.MockSerial"><code class="docutils literal notranslate"><span class="pre">MockSerial</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#my_projekt.SerielleApp"><code class="docutils literal notranslate"><span class="pre">SerielleApp</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#my_projekt.SerielleKom"><code class="docutils literal notranslate"><span class="pre">SerielleKom</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#klassen">Klassen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hauptprogramm">Hauptprogramm</a></li>
 </ul>
 </li>
 </ul>
