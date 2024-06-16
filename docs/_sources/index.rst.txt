@@ -4,6 +4,9 @@
    contain the root `toctree` directive.
 
 Welcome to Python GUI Project's documentation!
+
+Überblick
+Dieses Projekt bietet eine GUI-Anwendung zur Echtzeit-Visualisierung und Speicherung von Daten, die über eine serielle Schnittstelle empfangen werden. Es ermöglicht Benutzern, serielle Daten direkt in der Anwendung anzuzeigen und diese Daten in Echtzeit zu verfolgen.
 ==============================================
 
 .. toctree::
